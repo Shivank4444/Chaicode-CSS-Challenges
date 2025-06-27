@@ -1,0 +1,171 @@
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --gray-800: #1f2937;
+  --neutral-400: #9ca3af;
+  --neutral-900: #111827;
+
+  /* Dark mode variables */
+  --bg-dark: #111827;
+  --text-dark: #ffffff;
+  --border-dark: #374151;
+}
+
+
+.hero-grid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.content-col h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+.content-col p {
+  font-size: 20px;
+  width: 430px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+
+}
+
+.cta-group {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.input-wrapper {
+  margin-right: 10px;
+
+}
+
+input[type='text'] {
+  padding: 20px 70px;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding-left: 23px;
+  font-weight: 540;
+  font-size: 15px;
+}
+
+.demo-button {
+  color: #ffffff;
+  background-color: #3b82f6;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 23px;
+  font-weight: 540;
+  font-size: 15px;
+}
+
+.demo-button:hover {
+  filter: brightness(1.1);
+}
+
+
+.trusted-by {
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.brand-logos {
+  display: flex;
+  gap: 40px;
+}
+
+.brand-logo {
+  width: 100px;
+  height: 100px;
+}
+
+
+.hero-image {
+  height: 70vh;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+@media (min-width: 640px) {
+  .hero {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .demo-button {
+  }
+
+  .input-wrapper {
+  }
+
+  input[type='text'] {
+  }
+}
+
+@media (min-width: 768px) {
+  .content-col h1 {
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+  }
+
+  .hero-grid {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .brands-section {
+  }
+
+  .image-col {
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-grid {
+    gap: 3rem;
+  }
+}
+
+.dark-mode-toggle {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+  float: right;
+  transform: translateY(45px);
+  margin-right: 110px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.dark-mode-toggle:hover {
+  filter:brightness(1.2);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  border: var(--border-dark);
+}
