@@ -1,5 +1,3 @@
-/* Challenge CSS */
-
 * {
   margin: 0;
   padding: 0;
@@ -12,63 +10,101 @@ body {
   background-color: #f5f5f5;
 }
 
-.container {
-  /* Add your styles here */
-}
-
-h1 {
-  /* Add your styles here */
-}
 
 .pricing-heading {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
 
 .pricing-container {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  gap: 30px;
+  
 }
 
 .pricing-card {
-  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px white solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px 30px;
+  min-height: 600px;
+  width: 350px;
+  position: relative;
 }
 
 .pricing-card:hover {
-  /* Add your styles here */
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.pricing-card h2 {
+  margin-bottom: 20px;
 }
 
 .pricing-card.popular {
-  /* Add your styles here */
+  border: 3px #E57C30 solid;
+  min-height: 650px;
 }
 
 .popular-badge {
-  /* Add your styles here */
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: #E57C30;
+  border-radius: 10px;
+  padding: 10px 10px;
+  transform: translateY(-50%);
 }
 
 .price {
-  /* Add your styles here */
+  margin-bottom: 20px;
+  font-size: xx-large;
+  font-weight: 600;
 }
 
 .period {
-  /* Add your styles here */
+  margin-bottom: 40px;
 }
 
 .features {
-  /* Add your styles here */
+  margin-bottom: 20px;
 }
 
+ul li::before {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0px;
+  content: "🍵"; 
+  margin-right: 10px; 
+}
+
+
 .features li {
-  /* Add your styles here */
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .subscribe-btn {
-  /* Add your styles here */
+  border: none;
+  padding: 15px 45px;
+  border-radius: 30px;
+  background-color: #f08e48;
+  font-size: medium;
 }
 
 .subscribe-btn:hover {
-  /* Add your styles here */
+  transform: translateY(-2px);
+  filter: brightness(1.05);
 }
